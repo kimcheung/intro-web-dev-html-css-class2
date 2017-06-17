@@ -1,0 +1,423 @@
+s<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web development: Introduction to HTML/CSS</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="Amelia Kaufman">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/wit.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Work+Sans:500,700,900');
+    </style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <!-- slide 1: Welcome Slide -->
+        <section data-background="#FFF">
+          <header>
+            <img style="box-shadow: none;" src="http://i.imgur.com/pM8gKMX.png" />
+            <h2>WEB DEVELMOPMENT PART 2:</h2>
+            <h4>Enhance Your Portfolio</h4>
+            <aside class='notes'>
+             <ul>
+               <li>Welcome!</li>
+               <li>Goal today: explain what we do, coding basics and practice coding</li>
+               <li>Part of a series</li>
+               <li>Give you new skills</li>
+               <li>Improving communcation across teams</li>
+               <li>Have fun</li>
+             </ul>
+            </aside>
+          </header>
+        </section>
+        <!-- slide 2: Introduction Slide -->
+        <section data-background="#fff">
+          <h1>Who are we?</h1>
+          <h4>Viktoriya Eremeeva <span style="font-size: 24px;">- Sr. Software Engineer: Travel Group </span></h4>
+          <h4>Kim Cheung <span style="font-size: 24px;">- Software Engineer: Entertainment Group</span></h4>
+          <aside class='notes'>
+            <ul>
+              <li>Kim first</li>
+              <li>Background always in tech but not a developer</li>
+              <li>Vika introduction</li>
+              <li>Introduce helpers - They are here to help you as we move through the class so if you have an issue raise your hand and one of them can come and assist you.</li>
+              <li>Can be challenging to learn - ask clarification questsions</li>
+            </ul>
+          </aside>
+        </section>
+        <!-- slide 3: RECAP HTML & CSS -->
+
+        <section class='present' data-background="#fff" >
+          <h2>REVIEW OF HTML & CSS</h2>
+          <h4>The foundations of the web</h4>
+          <p class='fragment'>HTML tags are the building blocks of websites</p>
+          <p class='fragment'>CSS adds style - colors, alignment, spacing, fonts and responsiveness</p>
+        </section>
+        <!-- slide 4: HTML5 -->
+        <section class='stack present'>
+          <section class='present' data-background="#fff" >
+            <h2>HTML5</h2>
+            <h4>What is it & What can I do with it?</h4>
+            <p class='fragment'>HTML5 is the latest version of Hyper Text Markup Language</p>
+            <p class='fragment'>Allows us to not have to use extra plugins like Flash and your browsers know where to place your content</p>
+          </section>
+          <!-- slide 5: HTML5 tags -->
+          <section class='present' data-background="#fff" >
+            <h2>HTML5</h2>
+            <h4>New Way of Coding with HTML5</h4>
+            <pre><code class="hljs" data-trim contenteditable>
+              <header>
+               <h1>Header Text</h1>
+               <nav>
+                <ul>
+                 <li><a href="#">Link</a></li>
+                 <li><a href="#">Link</a></li>
+                 <li><a href="#">Link</a></li>
+                </ul>
+               </nav>
+              </header>
+            </code></pre>
+            <h4>Old Way of Coding with earlier versions of HTML</h4>
+            <pre><code class="hljs" data-trim contenteditable>
+            <div id="header">
+             <h1>Header Text</h1>
+             <div id="nav">
+              <ul>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+               <li><a href="#">Link</a></li>
+              </ul>
+             </div>
+            </div>
+            </code></pre>
+          </section>
+        </section>
+          <!-- slide 6: CSS -->
+        <section class='stack present'>
+          <section class='present' data-background="#fff" >
+            <h2>Cascading Style Sheets</h2>
+            <p class='fragment'>This is what we use to add design to the HTML </p>
+            <p class='fragment'>CSS allows us to separate presentation(CSS) from content(HTML) </p>
+          </section>
+          <!-- slide 7: CSS Code Examples -->
+          <section class='future' data-background="#000">
+            <h2>Sample CSS Code</h2>
+            <h3>Previous Way of Styling </h3>
+            <pre><code class="hljs" data-trim contenteditable>
+              <h1><font color="red"> Chapter 1. </font></h1>
+            </code></pre>
+            <h3>Now with CSS </h3>
+            <pre><code class="hljs" data-trim contenteditable>
+              <style>
+                h1 {color: red;}
+              </style>
+            </code></pre>
+          </section>
+        </section>
+        <!-- slide 8: Javascript -->
+          <!-- slide 29: Q&A -->
+          <section class='future' data-background='#000'>
+            <h2>Engineering Q&A</h2>
+            <h3>- Break -</h3>
+          </section>
+        </section>
+        <!-- slide 30: What are the building blocks of web development? -->
+        <section class='stack present'>
+          <section class="present" data-background="#fff">
+            <img style="box-shadow: none;" src="http://i.imgur.com/pM8gKMX.png" />
+            <h2>The Building Blocks of Web Development</h2>
+          </section>
+          <!-- slide 31: Building blocks of Web Development -->
+          <section data-background="#000">
+            <h2>What are the building blocks of web development?</h2>
+            <p>In web development, development is divided up into two responsibilities: front-end and back-end.</p>
+            <p style="color:#03ADE8;">Front-End</p>
+            <p>HTML, CSS, JS</p>
+            <p style="color:#03ADE8;">Back-End</p>
+            <p>PHP, RUBY, Python</p>
+            <aside class='notes'>
+              - Many developers specialize in one or the other but some do both - this is called being full-stack.
+            </aside>
+          </section>
+          <!-- slide 32: Front-end vs. Back-end -->
+          <section data-background="#000">
+            <img src="https://davidmles.com/wp-content/uploads/2017/02/frontend-vs-backend-768x432.png" />
+            <a href="https://davidmles.com/difference-frontend-backend/">https://davidmles.com/difference-frontend-backend/</a>
+          </section>
+          <!-- slide 33: HTML/CSS -->
+          <section class='future fragments data-background="#000"' data-background="#000">
+            <h2>Today we will only be focusing on two of the Front-End languages:</h2>
+            <div class='fragment'>
+              <h2>HTML & CSS</h2>
+            </div>
+          </section>
+          <!-- slide 34: HTML -->
+          <section class='future fragments data-background="#000"' data-background="#000">
+            <h2>What does HTML stand for?</h2>
+            <p class='fragment'>
+              <span style="color: #03ADE8">HYPERTEXT MARK-UP LANGUAGE</span>
+            </p>
+            <p class='fragment'>
+              <span style="color: #03ADE8">HYPERTEXT:</span>  <span style="font-size: 28px;">how you move about the web - by using hyperlinks!</span>
+            </p>
+            <p class='fragment'>
+              <span style="color: #03ADE8">MARK-UP:</span>  <span style="font-size: 28px;">What the HTML tags do to the text inside them! They mark them up - tell them what to be</span>
+            </p>
+             <p class='fragment'>
+              <span style="color: #03ADE8">Language:</span>  <span style="font-size: 28px;">HTML is a language</span>
+            </p>
+            <p class="fragment">
+              *Markup is saved as an html file and viewed through a browser.
+            </p>
+          </section>
+          <!-- slide 35: What can you do with HTML? -->
+          <section class='future fragments' data-background="#000">
+            <h2>What can you do with HTML?</h2>
+            <p class='fragment' data-fragment-index="0">
+              It is used to build the structure of a document.
+            </p>
+            <p class='fragment'>
+              You build out the skeleton of your page using HTML - this is called "mark-up"
+            </p>
+            <p class='fragment'>
+              MARK-UP - you are telling the page what types of elements you would like to render
+            </p>
+          </section>
+          <!-- slide 36: HTML? -->
+          <section class='future fragments' data-background="#000">
+            <a href="http://imgur.com/jdXIPr9"><img style="height: 550px;" src="http://i.imgur.com/jdXIPr9.png" title="source: imgur.com" /></a>
+          </section>
+          <!-- slide 37: HTML Tags -->
+          <section class='future fragments' data-background="#000">
+            <h2>So what are the different types of HTML tags that I can use?</h2>
+            <div class='fragment'>
+              <a href='https://www.w3schools.com/tags/'><p>List of HTML tags</p></a>
+            </div>
+            <div class='fragment'>
+              <p>While there are many different types of HTML tags, here are the few that we will be focusing on today:</p>
+            </div>
+            <aside class='notes'>
+            </aside>
+          </section>
+          <!-- slide 38: Types of tags we will be using today -->
+          <section class='future' data-background="#000">
+            <table>
+              <thead style='font-size: 36px'>
+                <tr>
+                  <th>Tag</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody style='font-size: 22px'>
+                <tr>
+                  <td>&lt;html&gt;...&lt;/html&gt;</td>
+                  <td>States that the web page should be written in HTML mark-up</td>
+                </tr>
+                <tr>
+                  <td>&lt;head&gt;...&lt;/head&gt;</td>
+                  <td>Has instructions for the browser and meta data for the website</td>
+                </tr>
+                <tr>
+                  <td>&lt;title&gt;...&lt;/title&gt;</td>
+                  <td>Declares the title of the page - this appears on the browser tab</td>
+                </tr>
+                <tr>
+                  <td>&lt;body&gt;...&lt;/body&gt;</td>
+                  <td>This is the body of the page - where most of your mark-up will go</td>
+                </tr>
+                <tr>
+                  <td>&lt;p&gt;...&lt;/p&gt;</td>
+                  <td>Creates a paragraph</td>
+                </tr>
+                <tr>
+                  <td>&lt;img src='...'&gt;</td>
+                  <td>Used to display and image</td>
+                </tr>
+                <tr>
+                  <td>&lt;a href='...'&gt;...&lt;/a&gt;</td>
+                  <td>Creates a link</td>
+                </tr>
+                <tr>
+                  <td>&lt;div&gt;...&lt;div&gt;</td>
+                  <td>Creates a container to nest other tags within - used for grouping elements</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <!-- slide 39: Document Type Element -->
+          <section class='future fragments' data-background="#000">
+            <h3>But there is one special element on your page.....</h3>
+            <div class='fragment'>
+              <p>The Document Type element</p>
+              <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+            </div>
+            <div class='fragment'>
+              <p>It appears at the top of the document page</p>
+            </div>
+            <div class='fragment'>
+              <p>It is not a HTML tag</p>
+            </div>
+            <div class='fragment'>
+              <p>It is actually an instruction to the web browser about what version of HTML the page is written in.</p>
+            </div>
+          </section>
+          <!-- slide 40: HTML structuring -->
+          <section class='future fragments' data-background="#000">
+            <a href="http://imgur.com/ThkPsHy"><img src="http://i.imgur.com/ThkPsHy.gif" title="source: imgur.com" /></a>
+          </section>
+          <!-- slide 41: CSS -->
+          <section class='future fragments' data-background="#000">
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets</p>
+            <div class='fragment'>
+              <p>Allows you to style/display HTML elements on the page</p>
+          </section>
+          <!-- slide 42: CSS Rules -->
+          <section class='future fragments' data-background="#000">
+            <p style="float: left; clear: both; text-align: left;">When you create a style for an element using CSS, you are creating a CSS rule:</p>
+            <img style="float: left;" src='https://www.w3schools.com/css/selector.gif'/>
+            <ul>
+              <li>
+                <span style="color: #03ADE8;"><b>selector</b></span>: this is the "name" applied to HTML elements that identifies which styles will be applied<br/>
+              </li>
+              <li>
+                 <span style="color: #03ADE8;"><b>property</b></span>: what you are changing about the element<br/>
+              </li>
+              <li>
+                 <span style="color: #03ADE8;"><b>value</b></span>: the values of the property set - discrete values such as pixles or colors<br/>
+              </li>
+            </ul>
+          </section>
+          <!-- slide 43: Targeting an element with CSS -->
+          <section class='future fragments' data-background="#000">
+            <h3>What are the different ways you can target an element?</h3>
+            <p>Types of selectors:</p>
+            <ul>
+              <li><b>element</b>: applies styles to all the declared elements on the page</li>
+              <pre><code>p{}</code></pre>
+              <li><b>class</b>: matches all elements with the declared class attribute - can be declared on multiple elements</li>
+              <pre><code>.dogs{}</code></pre>
+              <li><b>id</b>: matches all elements with the declared id attribute - can only be declared once on one element</li>
+              <pre><code>#dog{}</code></pre>
+            </ul>
+          </section>
+        </section>
+        <!-- slide 45: Personal Portfolio: Start -->
+        <section class='stack present' data-background="#fff" >
+          <section class='present'>
+            <h2>Lets start our personal portfolios!</h2>
+            <aside class='notes'>
+              <ul>
+                <li>Does everyone have a Github account?</li>
+                <li>Does everyone have a Thimble account?</li>
+                <li>Please open up 3 pages: Github, Thimble, Your Linkedin and Unsplash</li>
+                <li>when we do this presenation - syntax is important</li>
+                <li>im going to go slow but make sure the end of every line has a semi colon in CSS</li>
+                <li>Spelling is important</li>
+            </aside>
+          </section>
+          <!-- slide 46: What is Github? -->
+          <section class='present'>
+            <h2>Github</h2>
+            <p>"GitHub is a development platform inspired by the way you work. From open source to business, you can host and review code, manage projects, and build software alongside millions of other developers."</p>
+            <aside class='notes'>
+              <ul>
+                <li>When you develop locally, your code only existing on your computer.</li>
+                <li>Github stores a copy of your code so if your computer dies, your code doesnt go with it!</li>
+                <li>Github is a version control system</li>
+                <li>It keeps track of changes engineers make, allowing for change trackinga for collaboration amongst developers</li>
+              </ul>
+            </aside>
+          </section>
+          <!-- slide 47: What is a text editor? -->
+          <section data-background="#fff">
+            <h3>What is a text editor?</h3>
+            <p>A text editor is where developers can write code. It can read any language and shows the developer the file structure.</p>
+            <aside class='notes'>
+              - You dont have to download and use a text editor to edit code and test.
+              - Codepen, Thimble, etc. run in the browser
+            </aside>
+          </section>
+          <!-- slide 48: What is a text editor? -->
+          <section class='future'>
+              <h3>Lets talk about Thimble</h3>
+              <a href='https://thimble.mozilla.org/en-US/'><h2>https://thimble.mozilla.org/en-US/</h2></a>
+              <aside class='notes'>
+                <ul>
+                  <li>This is an online code editor</li>
+                  <li>Since most of you cannot download applications</li>
+                  <li>This closely resembles what a normal code editor would look like/development enviorment</li>
+                  <li>In some of the take home one-sheets I made, there are some links and info for using Sublime Editor which is the most commonly used code editor</li>
+                  <li>Talk about the different parts of Thimble</li>
+                  <li>
+                    <ul>
+                      <li>Division of HTML</li>
+                      <li>Division of CSS</li>
+                      <li>Talk about the file structure</li>
+                      <li>Render - acts like localhost - local host is how you view your files locally - it mirrors, not always perfectly, what your work will look like when up on the web.</li>
+                      <li>Always good to test your code locally first before pushing up to production</li>
+                    </ul>
+                  </li>
+              </aside>
+          </section>
+          <!-- slide 49: Project Images -->
+          <section class='future'>
+              <h3>Lets grab a photo from Pixabay</h3>
+              <a href='https://unsplash.com/'><h2>https://pixabay.com/</h2></a>
+          </section>
+          <!-- slide 50: Project Images -->
+          <section class='future'>
+              <h3>Grab a photo of yourself from Linkedin</h3>
+          </section>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
